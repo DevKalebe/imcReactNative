@@ -1,22 +1,14 @@
 import React from "react";
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import Title from './src/components/Title/';
-import Main from './src/components/Main/';
+import Form from './src/components/Form';
+import tw from 'twrnc';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View style={tw`w-full bg-black pt-15 pb-10`}>
       <Title/>
-      <Main/>
+      <Form/>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
